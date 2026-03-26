@@ -130,14 +130,19 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       menuBtn.click();
       const targetIndex = parseInt(item.getAttribute("data-index"));
-      if (targetIndex !== currentSectionIndex) {
-        goToSection(targetIndex);
+      if (window.innerWidth <= 768) {
+        document.getElementById(item.getAttribute("href").substring(1)).scrollIntoView({ behavior: "smooth" });
+      } else {
+        if (targetIndex !== currentSectionIndex) {
+          goToSection(targetIndex);
+        }
       }
     });
   });
 
   // --- Section Transitions ---
   function goToSection(index) {
+    if (window.innerWidth <= 768) return;
     if (isAnimating || index < 0 || index >= sections.length) return;
     isAnimating = true;
 
@@ -177,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Wheel and Touch Logic for scrolling sections
   let touchStartY = 0;
   window.addEventListener("wheel", (e) => {
-    if (menuOpen) return;
+    if (window.innerWidth <= 768 || menuOpen) return;
     if (Math.abs(e.deltaY) > 30) {
       if (e.deltaY > 0) {
         goToSection(currentSectionIndex + 1);
@@ -188,11 +193,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   window.addEventListener("touchstart", e => {
+    if (window.innerWidth <= 768) return;
     touchStartY = e.changedTouches[0].screenY;
   });
 
   window.addEventListener("touchend", e => {
-    if (menuOpen) return;
+    if (window.innerWidth <= 768 || menuOpen) return;
     const touchEndY = e.changedTouches[0].screenY;
     if (touchStartY - touchEndY > 50) {
       goToSection(currentSectionIndex + 1);
