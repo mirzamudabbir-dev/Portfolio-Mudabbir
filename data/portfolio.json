@@ -1,0 +1,145 @@
+{
+  "site": {
+    "title": "M. | Portfolio",
+    "logo": "M.",
+    "tagline": "#COME, WHAT MAY",
+    "heroName": {
+      "line1": "MIRZA",
+      "line2": "MUDABBIR"
+    },
+    "heroDescription": "I'm drawn to clarity over noise. To details that most people overlook. This is a space shaped by that mindset — simple, but never careless.",
+    "footerText": "© 2026 M. ALL RIGHTS RESERVED. DESIGNED WITH PRECISION."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "navLabel": "HOME",
+      "visible": true,
+      "order": 0
+    },
+    {
+      "id": "about",
+      "type": "about",
+      "navLabel": "ABOUT",
+      "visible": true,
+      "order": 1,
+      "content": {
+        "heading": "STUDENT;",
+        "headingOutline": "ALWAYS LEARNING",
+        "body": "I focus on analytical thinking, structured problem-solving, and systems understanding, combining technical depth with business insight to build practical, real-world solutions.",
+        "stats": [
+          {
+            "id": "stat-1",
+            "title": "COMPUTER SCIENCE & ENGINEERING",
+            "label": "SREE CHAITANYA COLLEGE OF ENGINEERING"
+          },
+          {
+            "id": "stat-2",
+            "title": "BACHELORS IN BUSINESS ADMINISTRATION",
+            "label": "MANIPAL ACADEMY OF HIGHER EDUCATION"
+          }
+        ],
+        "skillCards": [
+          {
+            "id": "skill-1",
+            "connect": "➔ COMPUTER SCIENCE & ENGINEERING",
+            "title": "SOFTWARE SYSTEMS",
+            "description": "Machine Learning, Data Analytics, System Design Thinking, Backend Development, Database Management and Integration & Advanced Data Structures."
+          },
+          {
+            "id": "skill-2",
+            "connect": "➔ BUSINESS ADMINISTRATION",
+            "title": "BUSINESS & FINANCE",
+            "description": "Market Analysis, Financial Analysis, Operations & Tech Entrepreneurship."
+          }
+        ]
+      }
+    },
+    {
+      "id": "work",
+      "type": "work",
+      "navLabel": "WORK",
+      "visible": true,
+      "order": 2
+    },
+    {
+      "id": "contact",
+      "type": "contact",
+      "navLabel": "CONTACT",
+      "visible": true,
+      "order": 3,
+      "content": {
+        "heading": "LET'S CONNECT",
+        "socialLinks": [
+          {
+            "id": "social-1",
+            "platform": "Twitter / X",
+            "url": "https://x.com/mirzadocx?s=21",
+            "icon": "twitter"
+          },
+          {
+            "id": "social-2",
+            "platform": "GitHub",
+            "url": "https://github.com/mirzamudabbir-dev",
+            "icon": "github"
+          },
+          {
+            "id": "social-3",
+            "platform": "LinkedIn",
+            "url": "https://www.linkedin.com/in/mirza-mudabbir-ali-baig-b51930324",
+            "icon": "linkedin"
+          },
+          {
+            "id": "social-4",
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/mirza.docx",
+            "icon": "instagram"
+          }
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "AI Data Analysis",
+      "category": "Agentic AI & Analytics WebApp",
+      "description": "",
+      "tags": [
+        "AI",
+        "Analytics",
+        "Agentic"
+      ],
+      "image": "/images/dabg.png",
+      "link": "#",
+      "linkTarget": "_self",
+      "status": "published",
+      "featured": false,
+      "order": 0,
+      "metrics": {},
+      "createdAt": "2026-03-30T00:00:00Z",
+      "updatedAt": "2026-03-30T00:00:00Z"
+    },
+    {
+      "id": "proj-2",
+      "title": "TaxMate",
+      "category": "Financial Analytics & Computations WebApp",
+      "description": "",
+      "tags": [
+        "Finance",
+        "Analytics",
+        "WebApp"
+      ],
+      "image": "/images/tmbg.png",
+      "link": "https://taxmate-jhq.pages.dev",
+      "linkTarget": "_blank",
+      "status": "published",
+      "featured": false,
+      "order": 1,
+      "metrics": {},
+      "createdAt": "2026-03-30T00:00:00Z",
+      "updatedAt": "2026-03-30T00:00:00Z"
+    }
+  ]
+}
