@@ -111,7 +111,7 @@
         "Analytics",
         "Agentic"
       ],
-      "image": "/images/dabg.png",
+      "image": "./images/dabg.png",
       "link": "#",
       "linkTarget": "_self",
       "status": "published",
@@ -131,7 +131,7 @@
         "Analytics",
         "WebApp"
       ],
-      "image": "/images/tmbg.png",
+      "image": "./images/tmbg.png",
       "link": "https://taxmate-jhq.pages.dev",
       "linkTarget": "_blank",
       "status": "published",

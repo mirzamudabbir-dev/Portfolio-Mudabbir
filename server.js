@@ -70,10 +70,11 @@ app.use('/admin', express.static(path.join(__dirname, 'admin')));
 // Uploaded files
 app.use('/uploads', express.static(UPLOADS_DIR));
 
-// Portfolio static files (CSS, JS, images)
+// Portfolio static files (CSS, JS, images, data)
 app.use('/style.css', express.static(path.join(__dirname, 'style.css')));
 app.use('/main.js', express.static(path.join(__dirname, 'main.js')));
 app.use('/images', express.static(path.join(__dirname, 'images')));
+app.use('/data', express.static(DATA_DIR));
 
 // Portfolio index
 app.get('/', (req, res) => {
@@ -392,7 +393,7 @@ app.post('/api/admin/upload', requireAuth, upload.single('image'), (req, res) =>
       filename: req.file.filename,
       originalName: req.file.originalname,
       size: req.file.size,
-      url: `/uploads/${req.file.filename}`
+      url: `./uploads/${req.file.filename}`
     }
   });
 });

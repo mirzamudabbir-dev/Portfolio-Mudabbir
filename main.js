@@ -13,11 +13,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function loadPortfolioData() {
     try {
-      const res = await fetch('/api/data');
+      // Fetch directly from the JSON file to support GitHub Pages static hosting
+      const res = await fetch('./data/portfolio.json');
       if (!res.ok) throw new Error('Failed to load data');
-      return await res.json();
+      const data = await res.json();
+      
+      // Filter out hidden/draft items on the frontend for static hosting
+      return {
+        ...data,
+        sections: (data.sections || [])
+          .filter(s => s.visible)
+          .sort((a, b) => a.order - b.order),
+        projects: (data.projects || [])
+          .filter(p => p.status === 'published')
+          .sort((a, b) => a.order - b.order)
+      };
     } catch (err) {
-      console.warn('API unavailable, using fallback data.');
+      console.warn('Data unavailable.', err);
       return null;
     }
   }
