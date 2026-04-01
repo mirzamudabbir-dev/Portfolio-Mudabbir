@@ -106,13 +106,9 @@
       "title": "AI Data Analysis",
       "category": "Agentic AI & Analytics WebApp",
       "description": "",
-      "tags": [
-        "AI",
-        "Analytics",
-        "Agentic"
-      ],
+      "tags": ["AI", "Analytics", "Agentic"],
       "image": "./images/dabg.png",
-      "link": "#",
+      "link": "https://847ca716.multi-agent-analyst.pages.dev",
       "linkTarget": "_self",
       "status": "published",
       "featured": false,
@@ -126,11 +122,7 @@
       "title": "TaxMate",
       "category": "Financial Analytics & Computations WebApp",
       "description": "",
-      "tags": [
-        "Finance",
-        "Analytics",
-        "WebApp"
-      ],
+      "tags": ["Finance", "Analytics", "WebApp"],
       "image": "./images/tmbg.png",
       "link": "https://taxmate-jhq.pages.dev",
       "linkTarget": "_blank",
